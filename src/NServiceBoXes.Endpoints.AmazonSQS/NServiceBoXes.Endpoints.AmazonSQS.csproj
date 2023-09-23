@@ -9,7 +9,7 @@
     <PropertyGroup>
         <Authors>Mauro Servienti</Authors>
         <Description>NServiceBoXes Endpoints for AmazonSQS</Description>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>
         <PackageTags>NServiceBus NServiceBoXes Endpoints Amazon SQS AWS</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
