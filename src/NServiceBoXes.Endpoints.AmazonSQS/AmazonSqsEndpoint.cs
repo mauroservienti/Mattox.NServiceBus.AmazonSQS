@@ -11,7 +11,7 @@ public class AmazonSqsEndpoint : NServiceBusEndpoint<SqsTransport>
     readonly IAmazonSQS? _amazonSqsClient;
     readonly IAmazonSimpleNotificationService? _amazonSnsClient;
 
-    public AmazonSqsEndpoint(IConfiguration? configuration)
+    public AmazonSqsEndpoint(IConfiguration configuration)
         : base(GetEndpointNameFromConfigurationOrThrow(configuration), configuration)
     {
         if (configuration == null) throw new ArgumentNullException(nameof(configuration));
