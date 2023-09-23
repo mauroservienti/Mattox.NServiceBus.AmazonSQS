@@ -2,6 +2,7 @@ using Amazon.SimpleNotificationService;
 using Amazon.SQS;
 using Microsoft.Extensions.Configuration;
 using NServiceBoXes.Endpoints;
+using NServiceBus;
 
 namespace NServiceBoXes.Endpoints.AmazonSQS;
 
