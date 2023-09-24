@@ -6,20 +6,13 @@ NServiceBoXes Endpoints simplify [NServiceBus endpoints](https://docs.particular
 
 Creating and starting an Amazon SQS endpoint is as easy as:
 
-```csharp
-var endpoint = new AmazonSqsEndpoint("my-endpoint");
-var endpointInstance = await endpoint.Start();
-```
+snippet: BasicEndpointUsage
 
 ## Microsoft configuration extension support
 
 NServiceBoXes endpoints can be configured through the [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). The above-presented Amazon SQS endpoint can be configured as follows:
 
-```csharp
-Host.CreateDefaultBuilder()
-    .UseNServiceBus(hostBuilderContext => new AmazonSqsEndpoint(hostBuilderContext.Configuration))
-    .Build();
-```
+snippet: UseWithHost
 
 The endpoint will retrieve values from the `IConfiguration` object instance.
 

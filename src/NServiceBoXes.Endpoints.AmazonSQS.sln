@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBoXes.Endpoints.Ama
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBoXes.Endpoints.AmazonSQS.Tests", "NServiceBoXes.Endpoints.AmazonSQS.Tests\NServiceBoXes.Endpoints.AmazonSQS.Tests.csproj", "{505CD59A-E103-427A-9722-937BC65B3E80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snippets", "Snippets\Snippets.csproj", "{7CEAA9C8-4D65-4F77-87CB-D3E690FB6950}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{505CD59A-E103-427A-9722-937BC65B3E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{505CD59A-E103-427A-9722-937BC65B3E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{505CD59A-E103-427A-9722-937BC65B3E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEAA9C8-4D65-4F77-87CB-D3E690FB6950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEAA9C8-4D65-4F77-87CB-D3E690FB6950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEAA9C8-4D65-4F77-87CB-D3E690FB6950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEAA9C8-4D65-4F77-87CB-D3E690FB6950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
