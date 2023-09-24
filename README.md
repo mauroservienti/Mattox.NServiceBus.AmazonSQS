@@ -22,7 +22,7 @@ NServiceBoXes endpoints can be configured through the [`Microsoft.Extensions.Con
 <!-- snippet: UseWithHost -->
 <a id='snippet-usewithhost'></a>
 ```cs
-var host = Host.CreateDefaultBuilder()
+Host.CreateDefaultBuilder()
     .UseNServiceBus(hostBuilderContext => new AmazonSqsEndpoint(hostBuilderContext.Configuration))
     .Build();
 ```
