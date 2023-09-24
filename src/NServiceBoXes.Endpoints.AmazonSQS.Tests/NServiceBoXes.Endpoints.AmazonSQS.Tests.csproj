@@ -37,8 +37,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="endpoint.settings.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <None Update="When_using_json_config_to_set_name_prefixes.settings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 
