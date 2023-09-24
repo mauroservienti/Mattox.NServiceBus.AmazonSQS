@@ -10,8 +10,7 @@ jobs:
     name: Process documentation
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      pull-requests: write
+      contents: write
     steps:
     - uses: actions/checkout@v4.1.0
     - name: Run MarkdownSnippets
