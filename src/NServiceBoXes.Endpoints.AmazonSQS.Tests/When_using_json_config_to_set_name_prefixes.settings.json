@@ -1,0 +1,11 @@
+{
+ "NServiceBus": {
+   "EndpointConfiguration": {
+     "EndpointName": "my-endpoint",
+     "Transport": {
+       "QueueNamePrefix": "my-q",
+       "TopicNamePrefix": "my-t"
+     }
+   }
+ } 
+}

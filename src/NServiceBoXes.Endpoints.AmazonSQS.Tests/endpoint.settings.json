@@ -1,7 +1,0 @@
-{
- "NServiceBus": {
-   "EndpointConfiguration": {
-     "EndpointName": "my-endpoint"
-   }
- } 
-}
