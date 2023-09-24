@@ -17,6 +17,7 @@ env:
 jobs:
   documentation:
     name: Process documentation
+    if: startsWith(github.ref, 'refs/pull')
     runs-on: ubuntu-latest
     permissions:
       contents: write
