@@ -15,32 +15,6 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   AWS_REGION: ${{ secrets.AWS_REGION }}
 jobs:
-  documentation:
-    name: Process documentation
-    if: startsWith(github.ref, 'refs/pull')
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-    - uses: actions/checkout@v4.1.0
-    - name: Run MarkdownSnippets
-      run: |
-        dotnet tool install --global MarkdownSnippets.Tool
-        mdsnippets ${GITHUB_WORKSPACE} -c InPlaceOverwrite
-        git add .
-      shell: bash
-    - name: Fix links
-      run: find ${GITHUB_WORKSPACE} -name "*.md" -not -name "*.source.md" -type f -exec sed -i '6,$s/\.source\.md/\.md/g' {} \;
-      shell: bash
-    - name: Push changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "MarkdownSnippets documentation changes" -a  || echo "nothing to commit"
-        remote="https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
-        branch="${GITHUB_REF:11}"
-        git push "${remote}" ${branch} || echo "nothing to push"
-      shell: bash
   build:
     name: Build and test on ${{ matrix.name }}
     runs-on: ${{ matrix.os }}
