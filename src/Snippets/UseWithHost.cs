@@ -8,7 +8,7 @@ public class UseWithHost
 {
     static void Usage()
     {
-        // begin-snippet UseWithHost
+        // begin-snippet: UseWithHost
         var host = Host.CreateDefaultBuilder()
             .UseNServiceBus(hostBuilderContext => new AmazonSqsEndpoint(hostBuilderContext.Configuration))
             .Build();
