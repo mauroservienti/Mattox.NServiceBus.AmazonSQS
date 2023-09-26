@@ -4,7 +4,7 @@ NServiceBoXes endpoints can be configured through the [`Microsoft.Extensions.Con
 
 The NServiceBoXes.Endpoints.AmazonSQS endpoint supports the following configuration options.
 
-- `NServiceBus:EndpointConfiguration:Transport:QueueNamePrefix`
-- `NServiceBus:EndpointConfiguration:Transport:TopicNamePrefix`
+- `NServiceBus:EndpointConfiguration:Transport:QueueNamePrefix` allows controlling the [queue name prefix](https://docs.particular.net/transports/sqs/configuration-options#queuenameprefix) used by the transport to locate queues.
+- `NServiceBus:EndpointConfiguration:Transport:TopicNamePrefix` allows controlling the [topic name prefix](https://docs.particular.net/transports/sqs/configuration-options#topicnameprefix) used by the transport to locate topics.
 - `NServiceBus:EndpointConfiguration:Transport:MaxTimeToLive`
 - `NServiceBus:EndpointConfiguration:Transport:DoNotWrapOutgoingMessages`
