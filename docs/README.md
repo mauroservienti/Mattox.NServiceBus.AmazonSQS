@@ -6,5 +6,5 @@ The NServiceBoXes.Endpoints.AmazonSQS endpoint supports the following configurat
 
 - `NServiceBus:EndpointConfiguration:Transport:QueueNamePrefix` allows controlling the [queue name prefix](https://docs.particular.net/transports/sqs/configuration-options#queuenameprefix) used by the transport to locate queues.
 - `NServiceBus:EndpointConfiguration:Transport:TopicNamePrefix` allows controlling the [topic name prefix](https://docs.particular.net/transports/sqs/configuration-options#topicnameprefix) used by the transport to locate topics.
-- `NServiceBus:EndpointConfiguration:Transport:MaxTimeToLive`
-- `NServiceBus:EndpointConfiguration:Transport:DoNotWrapOutgoingMessages`
+- `NServiceBus:EndpointConfiguration:Transport:MaxTimeToLive` allows controlling the [maximum transport retention](https://docs.particular.net/transports/sqs/configuration-options#maxttldays) (in days) for messages.
+- `NServiceBus:EndpointConfiguration:Transport:DoNotWrapOutgoingMessages` (`True`/`False`, defult `False`) by default outgoing messages are [wrapped and base64 encoded](https://docs.particular.net/transports/sqs/configuration-options#donotwrapoutgoingmessages), the setting instructs the transport to not wrap and to not base64 encode outgoing messages. 
