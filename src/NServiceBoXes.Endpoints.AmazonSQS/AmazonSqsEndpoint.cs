@@ -42,6 +42,8 @@ public class AmazonSqsEndpoint : NServiceBusEndpoint<SqsTransport>
             transport = new SqsTransport();   
         }
 
+        transport.DoNotWrapOutgoingMessages = true;
+
         if (endpointConfigurationSection?.GetSection("Transport") is { } transportConfigurationSection)
         {
             if (transportConfigurationSection["QueueNamePrefix"] is { } queueNamePrefix)
