@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBoXes.Endpoints.AmazonSQS", "NServiceBoXes.Endpoints.AmazonSQS\NServiceBoXes.Endpoints.AmazonSQS.csproj", "{5676270E-7CF4-46E1-A349-954768282208}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maddox.NServiceBus.AmazonSQS", "Maddox.NServiceBus.AmazonSQS\Maddox.NServiceBus.AmazonSQS.csproj", "{5676270E-7CF4-46E1-A349-954768282208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBoXes.Endpoints.AmazonSQS.Tests", "NServiceBoXes.Endpoints.AmazonSQS.Tests\NServiceBoXes.Endpoints.AmazonSQS.Tests.csproj", "{505CD59A-E103-427A-9722-937BC65B3E80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maddox.NServiceBus.AmazonSQS.Tests", "Maddox.NServiceBus.AmazonSQS.Tests\Maddox.NServiceBus.AmazonSQS.Tests.csproj", "{505CD59A-E103-427A-9722-937BC65B3E80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snippets", "Snippets\Snippets.csproj", "{7CEAA9C8-4D65-4F77-87CB-D3E690FB6950}"
 EndProject

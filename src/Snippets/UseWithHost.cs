@@ -1,5 +1,5 @@
 using Microsoft.Extensions.Hosting;
-using NServiceBoXes.Endpoints.AmazonSQS;
+using Maddox.NServiceBus.AmazonSQS;
 using NServiceBus;
 
 namespace Snippets;

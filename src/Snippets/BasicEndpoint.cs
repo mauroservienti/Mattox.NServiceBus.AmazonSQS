@@ -1,4 +1,4 @@
-using NServiceBoXes.Endpoints.AmazonSQS;
+using Maddox.NServiceBus.AmazonSQS;
 
 namespace Snippets;
 
