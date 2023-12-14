@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 
-namespace NServiceBoXes.Endpoints.AmazonSQS.Tests;
+namespace Maddox.NServiceBus.AmazonSQS.Tests;
 
 public class AmazonSqsEndpointTests
 {
@@ -12,8 +12,8 @@ public class AmazonSqsEndpointTests
         var jsonSettingsFileName = "When_using_json_config_to_set_name_prefixes.settings.json";
         var json = JObject.Parse(File.ReadAllText(jsonSettingsFileName));
         
-        var expectedQueueNamePrefix = json["NServiceBus"]["EndpointConfiguration"]["Transport"]["QueueNamePrefix"].Value<string>();
-        var expectedTopicNamePrefix = json["NServiceBus"]["EndpointConfiguration"]["Transport"]["TopicNamePrefix"].Value<string>();
+        var expectedQueueNamePrefix = json["NServiceBus"]!["EndpointConfiguration"]!["Transport"]!["QueueNamePrefix"]!.Value<string>();
+        var expectedTopicNamePrefix = json["NServiceBus"]!["EndpointConfiguration"]!["Transport"]!["TopicNamePrefix"]!.Value<string>();
         
         var configuration = new ConfigurationBuilder()
             .AddJsonFile(jsonSettingsFileName)
