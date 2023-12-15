@@ -3,7 +3,7 @@ using Amazon.SQS;
 using Microsoft.Extensions.Configuration;
 using NServiceBus;
 
-namespace Maddox.NServiceBus.AmazonSQS;
+namespace Mattox.NServiceBus.AmazonSQS;
 
 public class AmazonSqsEndpoint : NServiceBusEndpoint<SqsTransport>
 {

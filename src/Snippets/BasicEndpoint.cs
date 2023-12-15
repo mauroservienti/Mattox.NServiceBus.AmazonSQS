@@ -1,4 +1,4 @@
-using Maddox.NServiceBus.AmazonSQS;
+using Mattox.NServiceBus.AmazonSQS;
 
 namespace Snippets;
 

@@ -2,7 +2,7 @@ using NServiceBus;
 using NServiceBus.Configuration.AdvancedExtensibility;
 using NServiceBus.Transport;
 
-namespace Maddox.NServiceBus.AmazonSQS.Tests;
+namespace Mattox.NServiceBus.AmazonSQS.Tests;
 
 public static class TestHelpers
 {

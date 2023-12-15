@@ -1,8 +1,8 @@
 <img src="assets/icon.png" width="100" />
 
-# Maddox.NServiceBus.AmazonSQS
+# Mattox.NServiceBus.AmazonSQS
 
-Maddox.NServiceBus simplifies [NServiceBus endpoints](https://docs.particular.net/nservicebus/) configuration by providing for supported transports a corresponding Maddox.NServiceBus endpoint with sensible defaults. `Maddox.NServiceBus.AmazonSQS` is the Maddox.NServiceBus endpoint for the [NServiceBus AmamzonSQS transport](https://docs.particular.net/transports/sqs/).
+Mattox.NServiceBus simplifies [NServiceBus endpoints](https://docs.particular.net/nservicebus/) configuration by providing for supported transports a corresponding Mattox.NServiceBus endpoint with sensible defaults. `Mattox.NServiceBus.AmazonSQS` is the Mattox.NServiceBus endpoint for the [NServiceBus AmamzonSQS transport](https://docs.particular.net/transports/sqs/).
 
 Creating and starting an Amazon SQS endpoint is as easy as:
 
@@ -17,7 +17,7 @@ var endpointInstance = await endpoint.Start();
 
 ## Microsoft configuration extension support
 
-Maddox.NServiceBus endpoints can be configured through the [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). The above-presented Amazon SQS endpoint can be configured as follows:
+Mattox.NServiceBus endpoints can be configured through the [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). The above-presented Amazon SQS endpoint can be configured as follows:
 
 <!-- snippet: UseWithHost -->
 <a id='snippet-usewithhost'></a>
@@ -33,7 +33,7 @@ The endpoint will retrieve values from the `IConfiguration` object instance.
 
 ## Supported endpoints
 
-For more information on all the supported endpoints, refer to the [Maddox.NServiceBus](https://github.com/mauroservienti/Maddox.NServiceBus#supported-endpoints) repository.
+For more information on all the supported endpoints, refer to the [Mattox.NServiceBus](https://github.com/mauroservienti/Mattox.NServiceBus#supported-endpoints) repository.
 
 ## How to get it
 

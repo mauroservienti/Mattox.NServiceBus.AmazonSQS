@@ -8,10 +8,10 @@
 
     <PropertyGroup>
         <Authors>Mauro Servienti</Authors>
-        <Description>Maddox Endpoints for AmazonSQS</Description>
+        <Description>Mattox Endpoints for AmazonSQS</Description>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>
-        <PackageTags>Maddox NServiceBus Endpoints Amazon SQS AWS</PackageTags>
+        <PackageTags>Mattox NServiceBus Endpoints Amazon SQS AWS</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -35,7 +35,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Maddox.NServiceBus" Version="0.0.6" />
+      <PackageReference Include="Mattox.NServiceBus" Version="0.0.7" />
       <PackageReference Include="NServiceBus.AmazonSQS" Version="[6.1.1, 7.0.0)" />
     </ItemGroup>
 
