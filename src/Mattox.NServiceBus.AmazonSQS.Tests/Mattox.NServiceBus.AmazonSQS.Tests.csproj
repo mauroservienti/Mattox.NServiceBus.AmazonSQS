@@ -15,7 +15,7 @@
     </ItemGroup>
     
     <ItemGroup Label="local runtime dependencies">
-        <PackageReference Include="Maddox.NServiceBus" Version="0.0.6" />
+        <PackageReference Include="Mattox.NServiceBus" Version="0.0.7" />
         <PackageReference Include="NServiceBus.AmazonSQS" Version="6.2.0" />
     </ItemGroup>
 
@@ -33,7 +33,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Maddox.NServiceBus.AmazonSQS\Maddox.NServiceBus.AmazonSQS.csproj" />
+      <ProjectReference Include="..\Mattox.NServiceBus.AmazonSQS\Mattox.NServiceBus.AmazonSQS.csproj" />
     </ItemGroup>
 
     <ItemGroup>

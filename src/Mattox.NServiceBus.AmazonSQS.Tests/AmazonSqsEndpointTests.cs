@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 
-namespace Maddox.NServiceBus.AmazonSQS.Tests;
+namespace Mattox.NServiceBus.AmazonSQS.Tests;
 
 public class AmazonSqsEndpointTests
 {
