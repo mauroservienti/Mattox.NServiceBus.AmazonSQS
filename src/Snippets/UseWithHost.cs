@@ -13,5 +13,17 @@ public class UseWithHost
             .UseNServiceBus(hostBuilderContext => new AmazonSqsEndpoint(hostBuilderContext.Configuration))
             .Build();
         // end-snippet
+        
+        // begin-snippet: UseWithHostUseNServiceBusAmazonSqsEndpoint
+        Host.CreateDefaultBuilder()
+            .UseNServiceBusAmazonSqsEndpoint()
+            .Build();
+        // end-snippet
+        
+        // begin-snippet: UseWithHostUseNServiceBusAmazonSqsEndpointWithEndpointName
+        Host.CreateDefaultBuilder()
+            .UseNServiceBusAmazonSqsEndpoint("MyEndpointName")
+            .Build();
+        // end-snippet
     }
 }
