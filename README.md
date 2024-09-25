@@ -57,7 +57,7 @@ In all cases, the endpoint will retrieve configuration values from the `IConfigu
 
 ## Supported endpoints
 
-For more information on all the supported endpoints, refer to the [Mattox.Endpoints](https://github.com/mauroservienti/Mattox.Endpoints#supported-endpoints) repository.
+For more information on all the supported endpoints, refer to the [Mattox.NServiceBus](https://github.com/mauroservienti/Mattox.NServiceBus#supported-endpoints) repository.
 
 ## How to get it
 
