@@ -7,29 +7,53 @@ Mattox Endpoints simplify [NServiceBus endpoints](https://docs.particular.net/ns
 Creating and starting an Amazon SQS endpoint is as easy as:
 
 <!-- snippet: BasicEndpointUsage -->
-<a id='snippet-basicendpointusage'></a>
+<a id='snippet-BasicEndpointUsage'></a>
 ```cs
 var endpoint = new AmazonSqsEndpoint("my-endpoint");
 var endpointInstance = await endpoint.Start();
 ```
-<sup><a href='/src/Snippets/BasicEndpoint.cs#L9-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-basicendpointusage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Snippets/BasicEndpoint.cs#L9-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-BasicEndpointUsage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 ## Microsoft configuration extension support
 
 Mattox endpoints can be configured through the [`Microsoft.Extensions.Configuration`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). The above-presented Amazon SQS endpoint can be configured as follows:
 
+<!-- snippet: UseWithHostUseNServiceBusAmazonSqsEndpoint -->
+<a id='snippet-UseWithHostUseNServiceBusAmazonSqsEndpoint'></a>
+```cs
+Host.CreateDefaultBuilder()
+    .UseNServiceBusAmazonSqsEndpoint()
+    .Build();
+```
+<sup><a href='/src/Snippets/UseWithHost.cs#L17-L21' title='Snippet source file'>snippet source</a> | <a href='#snippet-UseWithHostUseNServiceBusAmazonSqsEndpoint' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+If the endpoint name must be specified in code, the following overload can be used:
+
+<!-- snippet: UseWithHostUseNServiceBusAmazonSqsEndpointWithEndpointName -->
+<a id='snippet-UseWithHostUseNServiceBusAmazonSqsEndpointWithEndpointName'></a>
+```cs
+Host.CreateDefaultBuilder()
+    .UseNServiceBusAmazonSqsEndpoint("MyEndpointName")
+    .Build();
+```
+<sup><a href='/src/Snippets/UseWithHost.cs#L23-L27' title='Snippet source file'>snippet source</a> | <a href='#snippet-UseWithHostUseNServiceBusAmazonSqsEndpointWithEndpointName' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+if there is a need to access the host builder context before creating the endpoint, the following approach can be used:
+
 <!-- snippet: UseWithHost -->
-<a id='snippet-usewithhost'></a>
+<a id='snippet-UseWithHost'></a>
 ```cs
 Host.CreateDefaultBuilder()
     .UseNServiceBus(hostBuilderContext => new AmazonSqsEndpoint(hostBuilderContext.Configuration))
     .Build();
 ```
-<sup><a href='/src/Snippets/UseWithHost.cs#L11-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-usewithhost' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Snippets/UseWithHost.cs#L11-L15' title='Snippet source file'>snippet source</a> | <a href='#snippet-UseWithHost' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-The endpoint will retrieve values from the `IConfiguration` object instance.
+In all cases, the endpoint will retrieve configuration values from the `IConfiguration` object instance.
 
 ## Supported endpoints
 
@@ -39,12 +63,6 @@ For more information on all the supported endpoints, refer to the [Mattox.Endpoi
 
 - Pre-releases are available on [Feedz.io](https://feedz.io/) ([public feed](https://f.feedz.io/mauroservienti/pre-releases/nuget/index.json))
 - Releases on [NuGet.org](https://www.nuget.org/packages?q=Mattox)
-
-
-
-
-
-
 
 ---
 
